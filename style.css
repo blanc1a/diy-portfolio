@@ -1,0 +1,341 @@
+@import url(https://fonts.bunny.net/css?family=allerta-stencil:400|almarai:300|amiri:400);
+@import url(https://fonts.bunny.net/css?family=amiri:400,400i,700,700i);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #493f4b;
+  color: whitesmoke;
+  width: 100vw;
+}
+
+/*NAVIGATION*/
+header {
+  height: 10vh;
+  padding: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  position: fixed;
+  transition: all 0.4s ease; /*changes in font-size are smoother*/
+}
+
+nav a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: "Allerta Stencil", sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0.5em;
+  transition: font-size 0.8s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/*MAIN*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*ME SECTION*/
+#me {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 3em;
+  padding: 15em;
+}
+
+.img-bg {
+  background: #493f4b;
+  border: solid #2e2832 20px;
+  padding-bottom: 30px;
+  width: 416px;
+  height: 410px;
+}
+
+.img-bg img {
+  width: 376px;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -60px;
+  margin-left: 40px;
+}
+
+.about-me {
+  width: 600px;
+}
+
+.headline-container {
+  display: inline-block;
+}
+
+#text {
+  font-size: 1em;
+  font-family: "Amiri", serif;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 5px;
+  border-right: 5px solid #fee4c3;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(10), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.web-dev {
+  font-family: "Amiri", serif;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+.about-me-text {
+  font-family: "Amiri", serif;
+  font-size: 1.1em;
+}
+
+/*TECH SECTION*/
+#tech {
+  height: 50vh;
+  text-align: center;
+}
+
+#tech h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  margin-bottom: 100px;
+  border-radius: 16px 0px 16px 0px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2em 0;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 1em 1em;
+}
+
+.skill i {
+  font-size: 3em;
+  margin-right: 0.5em;
+}
+.skill img {
+  width: 60px;
+  margin-right: 1em;
+}
+
+/*PROJECTS*/
+#projects {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#projects h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  border-radius: 0px 16px 0px 16px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.container button {
+  font-family: "Allerta Stencil", sans-serif;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+button.active {
+  background: #2e2832;
+  color: white;
+}
+
+.filterable-cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Leichte Vergrößerung */
+  transition: all 200ms ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.hide {
+  display: none;
+}
+
+.card img {
+  object-fit: cover;
+  width: 416px;
+  height: 343px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+  padding: 1em;
+}
+
+.card-title {
+  font-size: 20px;
+  font-family: "Amiri", serif;
+  text-align: left;
+}
+
+/*CONTACT*/
+#contact {
+  height: 20vh;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#contact h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 16px 0px 16px 0px;
+  display: inline-block;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link i {
+  color: white;
+  font-size: 30px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1760px) {
+  .filterable-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .filterable-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .filter-buttons button {
+    font-size: 14px;
+  }
+  nav {
+    display: flex;
+    transform: rotate(90deg);
+    position: fixed;
+    right: -30px;
+    top: 190px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filter-buttons button {
+    font-size: 12px;
+  }
+  main {
+    margin-left: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin-left: 200px;
+  }
+}

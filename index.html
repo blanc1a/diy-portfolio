@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanca Ziems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./assets/img/favicon-32x32.png" type="img">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="#me">about</a>
+            <a href="#tech">tech</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="me">
+            <div class="img-bg">
+                <img src="./assets/img/me.jpg" alt="me">
+            </div>
+            <div class="about-me">
+                <h1 class="headline-container">
+                    <p id="text">I'M BLANCA</p>
+                    <!-- <span id="text">Blanca, a Junior Frontend Developer</span>
+                <span id="typed-cursor" class="typed-cursor">|</span> -->
+                </h1>
+                <p class="web-dev">an enthusiastic Frontend Web Developer who recently completed an intensive Coding
+                    Bootcamp.</p>
+                <br>
+                <p class="about-me-text">In this program, I gained comprehensive knowledge in HTML, CSS, and JavaScript.
+                    Additionally, I delved
+                    into modern frontend technologies such as Vue.js and Vite. I'm driven by the fusion of distinctive
+                    design and functional usability, aiming to tackle real-world challenges. Prioritizing user
+                    experience,
+                    I'm deeply passionate about crafting visually captivating and interactive websites. After completing
+                    my
+                    bootcamp, my goal is to channel my passion for web development into a professional environment. I am
+                    always curious and open to new challenges in the tech industry.
+                    Furthermore, I hold a degree in Media and Communications for Digital Business, which has provided me
+                    with a strong foundation in understanding digital platforms and their impact on modern businesses.
+                </p>
+            </div>
+        </section>
+        <section id="tech">
+            <h2>tech I worked with</h2>
+            <div class="skill-container">
+                <div class="skill">
+                    <i class="devicon-html5-plain"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill">
+                    <i class="devicon-css3-plain"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <i class="devicon-javascript-plain"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <i class="devicon-vuejs-plain"></i>
+                    <span>Vue.js / Vite</span>
+                </div>
+                <div class="skill">
+                    <i class="bi bi-pc-display"></i>
+                    <span>Responsive Webdesign</span>
+                </div>
+                <div class="skill">
+                    <i class="devicon-git-plain"></i>
+                    <span>Versionierung | Git & GitHub</span>
+                </div>
+                <div class="skill">
+                    <i class="devicon-openapi-plain"></i>
+                    <span>REST-API</span>
+                </div>
+                <div class="skill">
+                    <i class="devicon-npm-original-wordmark"></i>
+                    <span>Node.js & NPM</span>
+                </div>
+                <div class="skill">
+                    <i class="bi bi-tv"></i>
+                    <span>Single-Page-Application</span>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>portfolio projects</h2>
+            <div class="project-wrapper">
+                <div class="container">
+                    <!--Filter Buttons-->
+                    <div class="filter-buttons">
+                        <button class="active" data-name="all">Show all</button>
+                        <button data-name="html">HTML & CSS</button>
+                        <button data-name="javascript">JavaScript</button>
+                        <button data-name="vue">Vue.js</button>
+                        <button data-name="gsap">GSAP</button>
+                        <button data-name="figma">Figma</button>
+                    </div>
+                </div>
+                <div class="filterable-cards">
+                    <!--data-name and data-url needed to filter and to go to other url => also used in JavaScript to access the right things-->
+                    <div class="card" data-name="html" data-url="ableton.html">
+                        <img src="./assets/img/ableton.jpg" alt="Ableton">
+                        <div class="card-body">
+                            <h6 class="card-title">Ableton</h6>
+                            <p class="card-text">Project from Frontend Practice</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="html">
+                        <img src="./assets/img/deplace-maison.jpg" alt="Deplacé Maison">
+                        <div class="card-body">
+                            <h6 class="card-title">Deplacé Maison</h6>
+                            <p class="card-text">Project from Frontend Practice</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="html">
+                        <img src="./assets/img/qrates.jpg" alt="Qrates">
+                        <div class="card-body">
+                            <h6 class="card-title">Qrates</h6>
+                            <p class="card-text">Project from Frontend Practice</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="javascript">
+                        <img src="./assets/img/quote-generator.jpg" alt="Quote Generator">
+                        <div class="card-body">
+                            <h6 class="card-title">Quote Generator</h6>
+                            <p class="card-text">Project from Zero to Mastery</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="javascript">
+                        <img src="./assets/img/color-changer.jpg" alt="Color Changer">
+                        <div class="card-body">
+                            <h6 class="card-title">Qrates</h6>
+                            <p class="card-text">Project idea of mine</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="javascript">
+                        <img src="./assets/img/calculator.jpg" alt="Calculator">
+                        <div class="card-body">
+                            <h6 class="card-title">Calculator</h6>
+                            <p class="card-text">Project idea of mine</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="vue">
+                        <img src="./assets/img/swob.jpg" alt="SWOB">
+                        <div class="card-body">
+                            <h6 class="card-title">SWOB</h6>
+                            <p class="card-text">Final project from the bootcamp</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="figma">
+                        <img src="./assets/img/figma.jpg" alt="Figma">
+                        <div class="card-body">
+                            <h6 class="card-title">Figma</h6>
+                            <p class="card-text">Project idea of mine</p>
+                        </div>
+                    </div>
+                    <div class="card" data-name="javascript">
+                        <img src="./assets/img/portfolio.jpg" alt="Portfolio">
+                        <div class="card-body">
+                            <h6 class="card-title">Portfolio</h6>
+                            <p class="card-text">Project idea of mine</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-wrapper">
+                <a class="link" href="https://github.com/blanc1a" target="_blank"><i class="bi bi-github"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/blanca-ziems-9778bb24a/" target="_blank"><i class=" bi
+                    bi-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
