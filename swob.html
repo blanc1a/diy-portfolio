@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--gibt zugriff auf sämtliche-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOB</title>
+    <link rel="stylesheet" href="style-subpage.css">
+    <link rel="icon" href="./assets/img/favicon-32x32.png" type="img">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html">go back</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-project">
+            <h1>SWOB</h1>
+            <div class="link-area">
+                <a id="live" target="_blank">live</a>
+                <a href="https://github.com/coding-bootcamps-eu/final-project-2023-09-swob" target="_blank">github</a>
+            </div>
+            <div id="custom-alert-box">
+                <div class="custom-alert-content">
+                    Unfortunately, there is no live view for this project because we had deployment issues on Netlify
+                    when the project was completed, and we haven't received a code review to this day.
+                </div>
+                <button id="alert-button">Okay</button>
+            </div>
+            <div class="explanation-area">
+                <div class="build-with">
+                    <span>build with: </span>
+                    <i class="devicon-vscode-plain"> VS Code</i>
+                    <i class="devicon-html5-plain"> HTML</i>
+                    <i class="devicon-css3-plain"> CSS</i>
+                    <i class="devicon-git-plain"> JavaScript</i>
+                    <i class="devicon-vuejs-plain"> Vue.js / Vite</i>
+                </div>
+                <div class="build-with">
+                    <p><span class="team">Team-Mates:</span>
+                        <i class="bi bi-cursor"></i>
+                        <a class="team-mate" href="https://github.com/mimibak">Mimi</a> & <a class="team-mate"
+                            href="https://github.com/Chronike">Giuliano</a>
+                    </p>
+                </div>
+                <div class="flex-container">
+                    <div class="left-explanation">
+                        <p>This project was created as part of the final project at the end of the bootcamp, where we
+                            were divided into groups and worked together on a project via Git & GitHub, developing,
+                            designing, and implementing our own idea.</p>
+
+                    </div>
+                    <div class="right-explanation">
+                        <p>
+                        <ul>
+                            <li><span>Drop down menu:</span> Creating a dropdown menu
+                            </li>
+                            <li><span>Spacing:</span> Proper use of margins and padding to create a visually appealing
+                                layout
+                            </li>
+                            <li><span>Image Arrangement</span> Using Transform and Position properties to arrange images
+                                correctly</li>
+                            <li><span>Grid & Flex Layout:</span> Unique and responsive grid- and flex-based layout
+                            </li>
+                            <li><span>Multi-Column Footer:</span> A footer with multiple columns to organize content
+                                efficiently
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-content">
+            <div class="slide-show">
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-40.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-41.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-42.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-43.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-44.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-45.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-46.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-47.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-48.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-49.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-50.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-51.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-52.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-53.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/portfolio-details-54.jpg" alt="" class="slide-pic">
+                </div>
+                <!--onclick attribut sorgt dafür dass die funktion switchSlider bei einem Klick aufgerufen wird-->
+                <!--1 für folie weiter und -1 für folie zurück-->
+                <!--href entfernen, sonst greift onclick nicht-->
+                <a class="arrow arrow-left" onclick="switchSlider(-1)"><span>&#10094</span></a>
+                <a class="arrow arrow-right" onclick="switchSlider(1)"><span>&#10095</span></a>
+                <ol class="indicator-list">
+                    <!--onclick um funktion aufzurufen => übergeben index-->
+                    <li class="indicator" onclick="moveToSlide(0)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(1)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(2)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(3)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(4)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(5)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(6)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(7)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(8)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(9)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(10)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(11)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(12)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(13)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(14)">&#8226</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+            <a class="link" href="https://github.com/blanc1a" target="_blank"><i class="bi bi-github"></i></a>
+            <a class="link" href="https://www.linkedin.com/in/blanca-ziems-9778bb24a/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script-subpage.js"></script>
+</body>
+
+</html>

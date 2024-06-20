@@ -97,6 +97,35 @@ nav a:hover::after {
   font-size: 30px;
 }
 
+#custom-alert-box {
+  background-color: whitesmoke;
+  color: black;
+  padding: 1em;
+  text-align: center;
+  margin: 20px 35%;
+  font-size: 20px;
+  /* box-shadow: 0 0 50px darkred; */
+  box-shadow: 0 0 50px #2e2832;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 0;
+  opacity: 0;
+}
+
+#custom-alert-box button {
+  all: unset;
+  background-color: white;
+  /* box-shadow: 7px 5px 5px darkred; */
+  box-shadow: 7px 5px 5px #2e2832;
+  color: black;
+  padding: 1px 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 /*MAIN*/
 
 main {
@@ -135,6 +164,22 @@ main {
 
 .build-with i {
   margin: 0.5em;
+}
+
+.team {
+  font-style: italic;
+  font-size: 25px;
+  margin-right: 1em;
+}
+
+.team-mate {
+  text-decoration: none;
+  color: white;
+}
+
+.team-mate:hover {
+  text-shadow: #702df7 1px 0 10px;
+  cursor: pointer;
 }
 
 /*EXPLANATION*/
@@ -202,6 +247,7 @@ main {
   overflow: hidden;
   opacity: 0;
   transition: opacity 2s;
+  background-color: black;
 }
 
 .slide-pic {

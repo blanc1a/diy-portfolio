@@ -38,3 +38,26 @@ function moveToSlide(newIndex) {
   slides[newIndex].classList.add("active");
   index = newIndex;
 }
+
+//alert
+const liveVue = document.getElementById("live");
+const alertBox = document.getElementById("custom-alert-box");
+const alertBtn = document.getElementById("alert-button");
+
+liveVue.addEventListener("click", openAlertBox);
+
+function openAlertBox() {
+  gsap.to(alertBox, {
+    opacity: 1,
+    duration: 0.7,
+    ease: "power1.inOut",
+  });
+}
+
+alertBtn.addEventListener("click", () => {
+  gsap.to(alertBox, {
+    opacity: 0,
+    duration: 0.7,
+    ease: "power1.inOut",
+  });
+});
