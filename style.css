@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #2e2832 #a49fa5;
+}
+
 body {
   background-color: #493f4b;
   color: whitesmoke;
@@ -291,6 +296,10 @@ button.active {
 .link i {
   color: white;
   font-size: 30px;
+}
+
+.link:hover {
+  text-shadow: #702df7 1px 0 10px;
 }
 
 /*MEDIA QUERIES*/
