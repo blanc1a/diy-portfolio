@@ -182,6 +182,10 @@ main {
   cursor: pointer;
 }
 
+#i {
+  font-style: normal;
+}
+
 /*EXPLANATION*/
 .flex-container {
   display: flex;
