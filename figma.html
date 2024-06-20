@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--gibt zugriff auf sämtliche-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Exercise</title>
+    <link rel="stylesheet" href="style-subpage.css">
+    <link rel="icon" href="./assets/img/favicon-32x32.png" type="img">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html">go back</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-project">
+            <h1>Figma Exercise</h1>
+            <!-- <div class="link-area">
+                <a href="https://blanc1a.github.io/color-changer/" target="_blank">live</a>
+                <a href="https://github.com/blanc1a/color-changer" target="_blank">github</a>
+            </div> -->
+            <div class="explanation-area">
+                <div class="build-with">
+                    <span>build with: </span>
+                    <i class="devicon-figma-plain"> Figma</i>
+                </div>
+                <div class="flex-container">
+                    <div class="left-explanation">
+                        <p>This is an independent exercise to familiarize myself with the Figma tool and learn its
+                            features and shortcuts. The idea was to recreate a screenshot and make it look as identical
+                            as possible.</p>
+                    </div>
+                    <div class="right-explanation">
+                        <p>
+                        <ul>
+                            <li>Screenshot from my own Instagram
+                            </li>
+                            <li>Recreated with Figma
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-content">
+            <div class="slide-show">
+                <!-- <div class="slide">
+                    <img src="./assets/img/content/figma-1.jpg" alt="" class="slide-pic">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/content/figma-2.jpg" alt="" class="slide-pic">
+                </div> -->
+                <div class="slide">
+                    <img src="./assets/img/content/figma-3.jpg" alt="" class="slide-pic">
+                </div>
+                <!--onclick attribut sorgt dafür dass die funktion switchSlider bei einem Klick aufgerufen wird-->
+                <!--1 für folie weiter und -1 für folie zurück-->
+                <!--href entfernen, sonst greift onclick nicht-->
+                <a class="arrow arrow-left" onclick="switchSlider(-1)"><span>&#10094</span></a>
+                <a class="arrow arrow-right" onclick="switchSlider(1)"><span>&#10095</span></a>
+                <ol class="indicator-list">
+                    <!--onclick um funktion aufzurufen => übergeben index-->
+                    <!-- <li class="indicator" onclick="moveToSlide(0)">&#8226</li>
+                    <li class="indicator" onclick="moveToSlide(1)">&#8226</li> -->
+                    <li class="indicator" onclick="moveToSlide(2)">&#8226</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+            <a class="link" href="https://github.com/blanc1a" target="_blank"><i class="bi bi-github"></i></a>
+            <a class="link" href="https://www.linkedin.com/in/blanca-ziems-9778bb24a/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+        </div>
+    </section>
+    <script src="script-subpage.js"></script>
+</body>
+
+</html>

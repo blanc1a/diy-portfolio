@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
 html {
   scrollbar-width: thin;
   scrollbar-color: #2e2832 #a49fa5;
