@@ -312,6 +312,10 @@ button.active {
 /*MEDIA QUERIES*/
 /*Computer*/
 @media screen and (max-width: 1920px) and (max-height: 1080px) {
+  html,
+  body {
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  }
   #tech {
     height: 100vh;
     padding-top: 15rem;
