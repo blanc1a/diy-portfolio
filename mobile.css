@@ -1,0 +1,8 @@
+@media only screen and (min-width: 360px) and (min-height: 800px) {
+  #nav a {
+    font-size: 10px;
+    position: fixed;
+    right: 0;
+    top: 5px;
+  }
+}

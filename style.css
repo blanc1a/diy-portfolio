@@ -70,6 +70,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 1em;
+  width: 100%;
 }
 
 /*ME SECTION*/
@@ -308,6 +310,60 @@ button.active {
 }
 
 /*MEDIA QUERIES*/
+/*Computer*/
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+  #tech {
+    height: 100vh;
+    padding-top: 15rem;
+  }
+  #projects {
+    padding-top: 5rem;
+  }
+
+  #contact {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 1024px) {
+}
+
+@media screen and (max-width: 2560px) and (max-height: 1440px) {
+  #tech {
+    height: 100vh;
+    padding-top: 20rem;
+  }
+  #projects {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+  #tech {
+    padding-top: 8rem;
+  }
+}
+
+/*Laptops*/
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+}
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+  #tech {
+    padding-top: 8rem;
+  }
+}
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  #tech {
+    padding-top: 8rem;
+  }
+}
+/*Smartphones*/
+@media screen and (max-width: 360px) and (max-height: 640px) {
+}
+@media screen and (max-width: 375px) and (max-height: 667px) {
+}
+@media screen and (max-width: 414px) and (max-height: 896px) {
+}
 
 @media screen and (max-width: 1760px) {
   .filterable-cards {
@@ -327,14 +383,6 @@ button.active {
 
 @media screen and (max-width: 1400px) {
   .filter-buttons button {
-    font-size: 14px;
-  }
-  nav {
-    display: flex;
-    transform: rotate(90deg);
-    position: fixed;
-    right: -30px;
-    top: 190px;
     font-size: 14px;
   }
 }
