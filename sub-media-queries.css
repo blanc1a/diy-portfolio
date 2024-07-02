@@ -1,0 +1,76 @@
+@media screen and (max-width: 1848px) {
+  .left-explanation p,
+  .right-explanation li {
+    font-size: 18px;
+  }
+
+  .left-explanation,
+  .right-explanation {
+    padding: 40px;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .left-explanation p,
+  .right-explanation li {
+    font-size: 16px;
+  }
+  .left-explanation,
+  .right-explanation {
+    padding: 40px;
+    height: 45vh;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  nav a {
+    font-size: 16px;
+  }
+  .left-explanation p,
+  .right-explanation li {
+    font-size: 16px;
+  }
+  .left-explanation,
+  .right-explanation {
+    padding: 35px;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .left-explanation p,
+  .right-explanation li {
+    font-size: 14px;
+  }
+  .left-explanation,
+  .right-explanation {
+    padding: 30px;
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 430px) and (max-height: 932px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .left-explanation,
+  .right-explanation {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .project-content {
+    width: 80vw;
+  }
+
+  .slide-show {
+    width: 80vw;
+    height: 35vh;
+  }
+
+  .slide img {
+    height: 35vh;
+    width: auto;
+  }
+}
